@@ -1,0 +1,287 @@
+  * {
+    box-sizing: border-box; /* utk semua yg berbentuk Box*/
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.774);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-left {
+    float: left;
+  }
+
+  .header-left h2 {
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 15px; /*Jarak antar menu*/
+    color: white;
+    display: block;
+    float: left; 
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.342);
+  }
+  
+  .top-wrapper {
+    padding: 65px 0 10px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+  
+  .overlay {
+    position: relative;
+    left: 0;
+    width: 1150px;
+    height: 700px;
+    background-color: rgba(189, 99, 181, 0.733);
+    opacity: 0.5;
+  }
+
+  .photo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -600px;
+    border-radius: 100em;
+    border-radius: 2px solid #ddd;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display : none;
+  }
+  
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    border-bottom: 2px solid #dad5d5;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: #686767; /*utk melihat ukuran padding sebaiknya di ksh warna background  dlu*/
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+  }
+  
+  .lesson-icon { 
+    position: relative; 
+  }
+  
+  .lesson-icon p {
+    position: absolute; 
+    top: 44%;
+    width: 100%;
+    color: white;
+  }
+  
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  
+  .form-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5d83ca;
+    cursor: pointer;
+    box-shadow: 0 7px #1a2879;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+  .form {
+    margin-top: -40px;
+  }
+  
+  
+  footer p {
+    font-weight: bold;
+    color: #0c0c0ce7;
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    margin-top: -15px;
+    padding: 5px 5px;
+    float: right;
+  }
+
+ .footer-logo a {
+   text-decoration: none;
+ }
+
+  .footer-logo img {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 0.5em;
+  }
+  
+  footer {
+    background-color: rgb(103, 104, 104);
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  /*===============================================Part Slideshow===================================================*/
+  #content-slider {
+    position:relative;
+    overflow:hidden; /*untuk mnyembunyikkan, menampakkan, atw membuat scroll */
+    width: 1150px;
+    height: 700px;
+    }
+
+    #content-slider h2 {
+      position: relative;
+      top: -600px;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    #content-slider p {
+      position: relative;
+      top: -560px;
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    #slideshow {
+    width: 1000%;
+    -webkit-animation: slideshow 10s infinite; /* For Chrome*/
+    -moz-animation: slideshow 10s infinite; /*For Firefox  */
+    -ms-animation: slideshow 10s infinite; /*For IE */
+    -o-animation: slideshow 10s infinite; /* For Opera */
+    }
+    
+    #slideshow img{
+    float:left
+    }
+    
+    /*=================Animation===================*/
+    
+    @-webkit-keyframes slideshow {
+    0%, 10%, 100% { margin-left: 0; }
+    20%, 30% { margin-left: -1150px;} /*ukuran px berbeda setiap slide*/
+    40%, 50% { margin-left: -2300px;}
+    60%, 70% { margin-left: -3450px;}
+    80% {margin-left: 0;}
+    }
+    
+    @-moz-keyframes slideshow {
+    0%, 10%, 100% { margin-left: 0; }
+    20%, 30% { margin-left: -1150px;}
+    40%, 50% { margin-left: -2300px;}
+    60%, 70% { margin-left: -3450px;}
+    80% {margin-left: 0;}
+    }
+    
+    @-ms-keyframes slideshow {
+    0%, 10%, 100% { margin-left: 0; }
+    20%, 30% { margin-left: -1150px;}
+    40%, 50% { margin-left: -2300px;}
+    60%, 70% { margin-left: -3450px;}
+    80% {margin-left: 0;}
+    }
+    
+    @-o-keyframes slideshow {
+    0%, 10%, 100% { margin-left: 0; }
+    20%, 30% { margin-left: -1150px;}
+    40%, 50% { margin-left: -2300px;}
+    60%, 70% { margin-left: -3450px;}
+    80% {margin-left: 0;}
+    }
